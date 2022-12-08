@@ -20,7 +20,7 @@ int main() {
 	int i, j;
 	int ctoi;
 	int n;
-	int v[10] = {1,2,3,4,5,6,7,8,9,10};
+	int v[10] = {1,2,3,4,5,6,7,8,9};
 	char s[MAXLINE];
 	char line[MAXLINE];
 	char longest[MAXLINE];
