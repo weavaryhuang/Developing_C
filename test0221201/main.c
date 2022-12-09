@@ -4,7 +4,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "calc.h"
-#define MAXOP 1000
+#define MAXOP 100
+#define NUMBER '0'
+
+
 
 int main() {
 	

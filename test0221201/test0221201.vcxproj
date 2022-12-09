@@ -127,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="test0221201.cpp" />
+    <ClCompile Include="getch.c" />
+    <ClCompile Include="getop.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="stack.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h" />
