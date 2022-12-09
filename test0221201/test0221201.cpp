@@ -12,9 +12,10 @@ int lower(int c);
 unsigned getbits(unsigned x, int p, int n);
 int bitcount(unsigned x);
 int binsearch(int x, int v[], int n);
+extern int test;
 
 int main() {
-	int len;
+	/*int len;
 	int max;
 	int c;
 	int i, j;
@@ -23,16 +24,35 @@ int main() {
 	int v[10] = {1,2,3,4,5,6,7,8,9,10};
 	char s[MAXLINE];
 	char line[MAXLINE];
-	char longest[MAXLINE];
+	char longest[MAXLINE];*/
 
-	n = sizeof(s);
+	int x = 1, y = 2, z[10];
+	int *ip;
+
+	ip = &x;
+	y = *ip;
+
+	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d\n\n", ip, *ip, x, &x, y, &y, z[0]);
+
+	*ip = 0;
+	ip = &z[0];
+
+	printf("ip = %d  *ip = %d  x = %d  &x = %d  y = %d  &y = %d  z[0] = %d\n\n", ip, *ip, x, &x, y, &y, z[0]);
+
+	*ip = 2;
+
+	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d\n\n", ip, *ip, x, &x, y, &y, z[0]);
+
+
+
+	/*n = sizeof(s);
 
 	for (i = 0; (c = getchar()) != EOF && i < n; i++)
 	{
 		s[i] = c;
 	}
 
-	printf("%d", atoi(s));
+	printf("%d", atoi(s));*/
 
 	
 
