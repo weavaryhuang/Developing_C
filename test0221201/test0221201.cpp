@@ -13,6 +13,7 @@ unsigned getbits(unsigned x, int p, int n);
 int bitcount(unsigned x);
 int binsearch(int x, int v[], int n);
 extern int test;
+void swap(int *px, int *py);
 
 int main() {
 	/*int len;
@@ -26,7 +27,17 @@ int main() {
 	char line[MAXLINE];
 	char longest[MAXLINE];*/
 
-	int x = 1, y = 2, z[10];
+	int x, y;
+	x = 10;
+	y = 3;
+
+	swap(&x, &y);
+
+	printf("%d   %d", x, y);
+
+
+
+	/*int x = 1, y = 2, z[10];
 	int *ip;
 
 	printf("ip =             *ip =             x = %d  &x = %d  y = %d  &y = %d  z[0] = %d  &z[0] = %d\n\n\n", x, &x, y, &y, z[0], &z[0]);
@@ -46,7 +57,7 @@ int main() {
 
 	*ip = 2;
 
-	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d           &z[0] = %d  &ip = %d\n\n", ip, *ip, x, &x, y, &y, z[0], &z[0], &ip);
+	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d           &z[0] = %d  &ip = %d\n\n", ip, *ip, x, &x, y, &y, z[0], &z[0], &ip);*/
 
 
 
@@ -159,6 +170,15 @@ int binsearch(int x, int v[], int n) {
 		return -1;
 
 }
+
+void swap(int* px, int* py) {
+	int temp;
+
+	temp = *px;
+	*px = *py;
+	*py = temp;
+
+};
 
 
 
