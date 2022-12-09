@@ -29,19 +29,24 @@ int main() {
 	int x = 1, y = 2, z[10];
 	int *ip;
 
+	printf("ip =             *ip =             x = %d  &x = %d  y = %d  &y = %d  z[0] = %d  &z[0] = %d\n\n\n", x, &x, y, &y, z[0], &z[0]);
+
 	ip = &x;
 	y = *ip;
 
-	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d\n\n", ip, *ip, x, &x, y, &y, z[0]);
+	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d  &z[0] = %d  &ip = %d\n\n", ip, *ip, x, &x, y, &y, z[0], &z[0], &ip);
 
 	*ip = 0;
+
+	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d  &z[0] = %d  &ip = %d\n\n", ip, *ip, x, &x, y, &y, z[0], &z[0], &ip);
+
 	ip = &z[0];
 
-	printf("ip = %d  *ip = %d  x = %d  &x = %d  y = %d  &y = %d  z[0] = %d\n\n", ip, *ip, x, &x, y, &y, z[0]);
+	printf("ip = %d  *ip = %d  x = %d  &x = %d  y = %d  &y = %d  z[0] = %d  &z[0] = %d  &ip = %d\n\n", ip, *ip, x, &x, y, &y, z[0], &z[0], &ip);
 
 	*ip = 2;
 
-	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d\n\n", ip, *ip, x, &x, y, &y, z[0]);
+	printf("ip = %d  *ip = %d           x = %d  &x = %d  y = %d  &y = %d  z[0] = %d           &z[0] = %d  &ip = %d\n\n", ip, *ip, x, &x, y, &y, z[0], &z[0], &ip);
 
 
 
