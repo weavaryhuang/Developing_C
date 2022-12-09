@@ -10,8 +10,21 @@
 
 
 int main() {
+
+	int x, y;
 	
-	int type;
+
+	x = 10;
+	y = 3;
+
+	swap(&x, &y);
+
+	printf("%d     %d", x, y);
+
+
+
+	
+	/*int type;
 	double op2;
 	char s[MAXOP];
 
@@ -44,7 +57,8 @@ int main() {
 			printf("error: unknown command %s\n", s);
 			break;
 		}
-	}
+	}*/
+
 	return 0;
 }
 

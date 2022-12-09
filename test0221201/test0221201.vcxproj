@@ -131,6 +131,7 @@
     <ClCompile Include="getop.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="stack.c" />
+    <ClCompile Include="tool.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h" />

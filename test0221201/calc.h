@@ -4,3 +4,4 @@ double pop(void);
 int getop(char[]);
 int getch(void);
 void ungetch(int);
+void swap(a, p);
