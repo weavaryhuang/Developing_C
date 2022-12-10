@@ -6,21 +6,21 @@
 #include "calc.h"
 #define MAXOP 100
 #define NUMBER '0'
+# define SIZE 10
 
 
 
 int main() {
 
-	int x, y;
-	
+	int n, i, array[SIZE];
 
-	x = 10;
-	y = 3;
+	for (n = 0; n < SIZE && getint(&array[n]) != EOF; n++)
+		;
 
-	swap(&x, &y);
+	printf("\n\n");
 
-	printf("%d     %d", x, y);
-
+	for (i = 0; i < SIZE; i++)
+		printf("%d\t", array[i]);
 
 
 	

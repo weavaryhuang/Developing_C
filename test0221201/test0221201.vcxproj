@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="getch.c" />
+    <ClCompile Include="getint.c" />
     <ClCompile Include="getop.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="stack.c" />
