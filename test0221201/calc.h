@@ -6,3 +6,4 @@ int getint(int *);
 int getch(void);
 void ungetch(int);
 void swap(a, p);
+int strlen(char *);

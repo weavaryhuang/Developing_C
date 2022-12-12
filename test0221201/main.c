@@ -6,21 +6,43 @@
 #include "calc.h"
 #define MAXOP 100
 #define NUMBER '0'
-# define SIZE 10
+#define SIZE 10
 
 
 
 int main() {
 
-	int n, i, array[SIZE];
+	int n, i, j, c, * p;
+	char array[SIZE];
 
-	for (n = 0; n < SIZE && getint(&array[n]) != EOF; n++)
-		;
+	i = 0;
+	j = 0;
+	n = 0;
 
-	printf("\n\n");
+	while ((c = getchar()) != EOF) {
+		if (c != ' ' || c != '\n' || c != '\t')
+			array[i++] = c;
+			if (i >= SIZE)
+				break;
+		/*printf("\t%d\n", i);*/
+	}
 
-	for (i = 0; i < SIZE; i++)
-		printf("%d\t", array[i]);
+	array[i] = '\0';
+
+	if (i >= SIZE) {
+		printf("\nExceed the maximun array range\n");
+		return -1;
+	}
+
+
+	printf("\n%s\n", array);
+
+	
+
+	/*for (n = 0; n < SIZE && getint(&array[n]) != EOF; n++)
+		;*/
+	/*for (i = 0; i < SIZE; i++)
+		printf("%d\t", array[i]);*/
 
 
 	
