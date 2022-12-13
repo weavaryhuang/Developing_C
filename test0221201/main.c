@@ -12,30 +12,35 @@
 
 int main() {
 
-	int n, i, j, c, * p;
-	char array[SIZE];
+	char amessage[] = "now is the time";
+	char *pmessage = "now is the time";
 
-	i = 0;
-	j = 0;
-	n = 0;
+	printf("%s\n", pmessage + 1);
 
-	while ((c = getchar()) != EOF) {
-		if (c != ' ' || c != '\n' || c != '\t')
-			array[i++] = c;
-			if (i >= SIZE)
-				break;
-		/*printf("\t%d\n", i);*/
-	}
+	//int n, i, j, c, * p;
+	//char array[SIZE];
 
-	array[i] = '\0';
+	//i = 0;
+	//j = 0;
+	//n = 0;
 
-	if (i >= SIZE) {
-		printf("\nExceed the maximun array range\n");
-		return -1;
-	}
+	//while ((c = getchar()) != EOF) {
+	//	if (c != ' ' || c != '\n' || c != '\t')
+	//		array[i++] = c;
+	//		if (i >= SIZE)
+	//			break;
+	//	/*printf("\t%d\n", i);*/
+	//}
+
+	//array[i] = '\0';
+
+	//if (i >= SIZE) {
+	//	printf("\nExceed the maximun array range\n");
+	//	return -1;
+	//}
 
 
-	printf("\n%s\n", array);
+	//printf("\n%s\n", array);
 
 	
 

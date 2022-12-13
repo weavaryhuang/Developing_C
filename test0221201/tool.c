@@ -18,3 +18,12 @@ int strlen(char* s) {
 		n++;
 	return n;
 }
+
+int fff(int *p) {
+	int i;
+
+	for (i = 0; i <= 3; i++)
+		p++;
+
+	return *p;
+}
