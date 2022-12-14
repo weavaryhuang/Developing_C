@@ -3,20 +3,29 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "calc.h"
 #define MAXOP 3
 #define NUMBER '0'
+#define MAXLINE 1000
 #define SIZE 10
 
 
 int main(int argc, char *argv[]) {
 
-	int i;
-	for (i = 1; i < argc; i++)
-		printf("%s%s", argv[i], (i < argc - 1) ? " " : "");
+	char line[MAXLINE];
+	int found = 0;
 
-	printf("\n");
-	return 0;
+	if (argc != 2)
+		printf("Usage: find pattern\n");
+	else
+		while(getline(line, MAXLINE) > 0)
+			if (strstr(line, argv[1]) != NULL) {
+				printf("%s", line);
+				found++;
+			}
+
+	return found;
 
 
 	/*char amessage[] = { 'a', 'b' };

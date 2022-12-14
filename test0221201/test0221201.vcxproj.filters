@@ -33,6 +33,9 @@
     <ClCompile Include="getint.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="getline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calc.h">
