@@ -4,18 +4,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "calc.h"
-#define MAXOP 100
+#define MAXOP 3
 #define NUMBER '0'
 #define SIZE 10
 
 
+int main(int argc, char *argv[]) {
 
-int main() {
+	int i;
+	for (i = 1; i < argc; i++)
+		printf("%s%s", argv[i], (i < argc - 1) ? " " : "");
 
-	char amessage[] = "now is the time";
-	char *pmessage = "now is the time";
+	printf("\n");
+	return 0;
 
-	printf("%s\n", pmessage + 1);
+
+	/*char amessage[] = { 'a', 'b' };
+	char *pmessage[] = { 'a', 'b' };
+	
+	int i;
+	
+	for( i = 0; i <= 1; i++)
+		printf("%c\n", pmessage[i]);*/
 
 	//int n, i, j, c, * p;
 	//char array[SIZE];
