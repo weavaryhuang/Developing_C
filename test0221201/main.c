@@ -1,19 +1,33 @@
 // test0221201.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <Windows.h>
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "calc.h"
 #define MAXOP 3
 #define NUMBER '0'
 #define MAXLINE 1000
 #define SIZE 10
 
 
+
 int main(int argc, char *argv[]) {
 
-	char line[MAXLINE];
+	char buffer[50];
+	int a = 10, b = 20, c;
+	c = a + b;
+	sprintf(buffer, "Sum of %d and %d is %d", a, b, c);
+
+	// The string "sum of 10 and 20 is 30" is stored
+	// into buffer instead of printing on stdout
+	printf("%s", buffer);
+
+
+
+	/*char line[MAXLINE];
 	int found = 0;
 
 	if (argc != 2)
@@ -25,7 +39,7 @@ int main(int argc, char *argv[]) {
 				found++;
 			}
 
-	return found;
+	return found;*/
 
 
 	/*char amessage[] = { 'a', 'b' };
